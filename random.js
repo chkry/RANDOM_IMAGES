@@ -43,10 +43,9 @@ function chkry() {
 
 }
 
-
 function calculate() {
-        var random = Math.random() * 3;
-        var random = random.toFixed(0);
+        var random = Math.random() * 4;
+        var random = Math.floor(random)
     return random;
 
 }
