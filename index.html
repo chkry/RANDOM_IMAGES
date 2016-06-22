@@ -8,14 +8,26 @@
     <style>
 
         #container{
-            background-color: white;
+            background-color: peachpuff;
             width:100%;
             height: 100%;
+            margin:0px auto;
+            display: block;
+            text-align: center;
         }
         #subContainer{
-            background-color: grey;
-            width: 500px;
+            background-color: white;
+            width: 800px;
             height: 500px;
+            margin:20px auto;
+            display: block;
+        }
+        #yesButton, #noButton{
+            width: 48%;
+            height: 100px;
+            display: inline-block;
+            border:4px solid orange;
+            background-color: sienna;
         }
     </style>
     </head>
@@ -23,22 +35,23 @@
 <body>
 
 
-    <div id="container"><h1>The Main Container</h1></div>
+    <div id="container"><h1>Guess Next Animal</h1>
+    <h4>Cat, Dog, Cow & Goat</h4>
+    </div>
 
 
     <div id="subContainer">
         <img id="sourceImage" src=""></img>
-
-
-
     </div>
+
 
 
     <div id="buttons">
-
-    <button id="yesButton">Yes</button>
-    <button>No</button>
+    <button id="noButton"><strong>Previous</strong></button>
+    <button id="yesButton"><strong>Next</strong></button>
     </div>
+
+
 
     <!--  ....................... Jquery Funtionality........................... -->
     <script src="random.js"></script>
